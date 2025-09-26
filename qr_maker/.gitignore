@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.pdb
 *.egg-info/
 *.egg
 *.log
@@ -14,17 +13,17 @@ ENV/
 env/
 .venv/
 
-# Django
+# Django stuff
 *.sqlite3
 db.sqlite3
 media/
 staticfiles/
 
-# Config
-*.env
+# Environment variables
+.env
 .env.*
 
-# VSCode / PyCharm
+# IDE
 .vscode/
 .idea/
 
@@ -32,5 +31,5 @@ staticfiles/
 .DS_Store
 Thumbs.db
 
-# Render / Heroku
+# Render / Heroku pid
 *.pid

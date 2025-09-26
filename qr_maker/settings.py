@@ -1,11 +1,9 @@
-# settings.py
-
+from pathlib import Path
 import os
-DEBUG = False
+from dotenv import load_dotenv
 
-# Render는 도메인을 환경변수로 넘겨줘요
-ALLOWED_HOSTS = [".onrender.com"]
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
 
-# 정적 파일 경로
-STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "insecure-key")
+DEBUG = os.environ.get("DEBUG", "False") == "True"
