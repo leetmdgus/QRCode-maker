@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Django
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Config
+*.env
+.env.*
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Render / Heroku
+*.pid
